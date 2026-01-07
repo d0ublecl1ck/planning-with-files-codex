@@ -33,7 +33,7 @@ Create a research summary on the benefits of morning exercise.
 ### Loop 2: Research
 ```bash
 Read task_plan.md           # Refresh goals
-WebSearch "morning exercise benefits"
+web.run search_query        # Gather sources
 Write notes.md              # Store findings
 Edit task_plan.md           # Mark Phase 2 complete
 ```

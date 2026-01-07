@@ -1,17 +1,17 @@
 ---
 name: planning-with-files
-description: Transforms workflow to use Manus-style persistent markdown files for planning, progress tracking, and knowledge storage. Use when starting complex tasks, multi-step projects, research tasks, or when the user mentions planning, organizing work, tracking progress, or wants structured output.
+description: Use persistent markdown files as working memory on disk for planning, progress tracking, and knowledge storage in Codex. Trigger when starting complex tasks, multi-step coding projects, research tasks, or when the user asks for planning, organizing work, tracking progress, or structured deliverables.
 ---
 
 # Planning with Files
 
-Work like Manus: Use persistent markdown files as your "working memory on disk."
+Use persistent markdown files as your "working memory on disk."
 
 ## Quick Start
 
 Before ANY complex task:
 
-1. **Create `task_plan.md`** in the working directory
+1. **Create `task_plan.md`** in the current working directory
 2. **Define phases** with checkboxes
 3. **Update after each phase** - mark [x] and change status
 4. **Read before deciding** - refresh goals in attention window
@@ -142,7 +142,7 @@ Every error goes in the "Errors Encountered" section. This builds knowledge for 
 
 | Don't | Do Instead |
 |-------|------------|
-| Use TodoWrite for persistence | Create `task_plan.md` file |
+| Use ephemeral in-chat plans only | Create `task_plan.md` file |
 | State goals once and forget | Re-read plan before each decision |
 | Hide errors and retry | Log errors to plan file |
 | Stuff everything in context | Store large content in files |
@@ -151,9 +151,9 @@ Every error goes in the "Errors Encountered" section. This builds knowledge for 
 ## Advanced Patterns
 
 See [reference.md](reference.md) for:
-- Attention manipulation techniques
+- Attention anchoring techniques
 - Error recovery patterns
-- Context optimization from Manus
+- Context optimization for long sessions
 
 See [examples.md](examples.md) for:
 - Real task examples

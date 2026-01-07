@@ -1,8 +1,8 @@
-# Reference: Manus Context Engineering Principles
+# Reference: Context Engineering Principles
 
-This skill is based on the context engineering principles from Manus, the AI agent company acquired by Meta for $2 billion in December 2025.
+This skill is based on practical context engineering patterns for long, multi-step tasks.
 
-## The 6 Manus Principles
+## The 6 Principles
 
 ### 1. Filesystem as External Memory
 
@@ -16,7 +16,7 @@ This skill is based on the context engineering principles from Manus, the AI age
 - Agent can "look up" information when needed
 - Compression must be REVERSIBLE
 
-### 2. Attention Manipulation Through Repetition
+### 2. Attention Anchoring Through Repetition
 
 **Problem:** After ~50 tool calls, models forget original goals ("lost in the middle" effect).
 
@@ -72,7 +72,7 @@ The model updates its internal understanding when seeing failures.
 
 ## The Agent Loop
 
-Manus operates in a continuous loop:
+Operate in a continuous loop:
 
 ```
 1. Analyze → 2. Think → 3. Select Tool → 4. Execute → 5. Observe → 6. Iterate → 7. Deliver
@@ -87,15 +87,6 @@ Manus operates in a continuous loop:
 | `edit` | Updating specific parts (checkboxes, status) |
 | `read` | Reviewing before decisions |
 
-## Manus Statistics
-
-| Metric | Value |
-|--------|-------|
-| Average tool calls per task | ~50 |
-| Input-to-output ratio | 100:1 |
-| Acquisition price | $2 billion |
-| Time to $100M revenue | 8 months |
-
 ## Key Quotes
 
 > "If the model improvement is the rising tide, we want Manus to be the boat, not the piling stuck on the seafloor."
@@ -106,5 +97,4 @@ Manus operates in a continuous loop:
 
 ## Source
 
-Based on Manus's official context engineering documentation:
-https://manus.im/de/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus
+Derived from general agent workflow practices and public context engineering guidance.
