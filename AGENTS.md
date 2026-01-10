@@ -1,0 +1,1 @@
+- Any change to skills must be updated in the local ~/.codex/skills/custom/ directory.
