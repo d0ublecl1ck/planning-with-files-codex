@@ -11,10 +11,11 @@ Use persistent markdown files as your "working memory on disk."
 
 Before ANY complex task:
 
-1. **Create `task_plan.md`** in the current working directory
-2. **Define phases** with checkboxes
-3. **Update after each phase** - mark [x] and change status
-4. **Read before deciding** - refresh goals in attention window
+1. **Ensure `.gitignore` ignores planning files** (`task_plan.md`, `notes.md`, `[deliverable].md`)
+2. **Create `task_plan.md`** in the current working directory
+3. **Define phases** with checkboxes
+4. **Update after each phase** - mark [x] and change status
+5. **Read before deciding** - refresh goals in attention window
 
 ## The 3-File Pattern
 
@@ -36,6 +37,11 @@ Loop 4: Deliver final output
 ```
 
 ### The Loop in Detail
+
+**Before creating any planning files:**
+```bash
+Check .gitignore for task_plan.md, notes.md, and [deliverable].md; append if missing (create .gitignore if needed)
+```
 
 **Before each major action:**
 ```bash
@@ -109,19 +115,28 @@ For research and findings:
 ### 1. ALWAYS Create Plan First
 Never start a complex task without `task_plan.md`. This is non-negotiable.
 
-### 2. Read Before Decide
+### 2. ALWAYS Ignore Planning Files in Git
+Before creating `task_plan.md`, `notes.md`, or `[deliverable].md`, ensure the nearest relevant `.gitignore` (repo root if inside a git repo; otherwise current directory) contains:
+```
+task_plan.md
+notes.md
+[deliverable].md
+```
+Create `.gitignore` if it does not exist.
+
+### 3. Read Before Decide
 Before any major decision, read the plan file. This keeps goals in your attention window.
 
-### 3. Update After Act
+### 4. Update After Act
 After completing any phase, immediately update the plan file:
 - Mark completed phases with [x]
 - Update the Status section
 - Log any errors encountered
 
-### 4. Store, Don't Stuff
+### 5. Store, Don't Stuff
 Large outputs go to files, not context. Keep only paths in working memory.
 
-### 5. Log All Errors
+### 6. Log All Errors
 Every error goes in the "Errors Encountered" section. This builds knowledge for future tasks.
 
 ## When to Use This Pattern

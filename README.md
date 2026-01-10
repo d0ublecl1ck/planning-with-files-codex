@@ -28,7 +28,7 @@ Codex (and most AI agents) suffer from:
 
 ## The Solution: 3-File Pattern
 
-For every complex task, create THREE files:
+For every complex task, create THREE files (and make sure they are ignored by git):
 
 ```
 task_plan.md      → Track phases and progress
@@ -77,6 +77,7 @@ In Codex, the skill will automatically activate when you:
 
 Once installed, Codex will automatically:
 
+1. **Ensure `.gitignore` ignores planning files** (`task_plan.md`, `notes.md`, `[deliverable].md`)
 1. **Create `task_plan.md`** before starting complex tasks
 2. **Update progress** with checkboxes after each phase
 3. **Store findings** in `notes.md` instead of stuffing context
